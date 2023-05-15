@@ -7,10 +7,10 @@ function addHeader(href){
         </div>
         <div class="buttons">
             <div class="dropdown">
-                <button class="show-dropdown button">Rules</button>
+                <button class="show-dropdown button" id="show-rules-dropdown-btn">Rules</button>
                 <div class="dropdown-content">
-                    <a href="discord_rules.html"><button class="button${href === "discord_rules.html" ? " selected" : ""}">Discord Rules</button></a>
-                    <a href="game_rules.html"><button class="button${href === "game_rules.html" ? " selected" : ""}">Game Rules</button></a>
+                    <a href="discord_rules.html"><button class="button${href === "discord_rules" ? " selected" : ""}" id="discord-rules-btn">Discord Rules</button></a>
+                    <a href="game_rules.html"><button class="button${href === "game_rules" ? " selected" : ""}" id="game-rules-btn">Game Rules</button></a>
                 </div>
             </div>
             <a target="__blank" href="https://discord.gg/YfNtky8Wnv"><button class="button">Discord</button></a>
@@ -25,5 +25,13 @@ function addHeader(href){
     const headerEl = document.createElement('header');
     headerEl.innerHTML = innerHTML;
     document.body.insertBefore(headerEl, document.body.firstChild);
+
+    const discordRules = document.getElementById("discord-rules-btn");
+    const gameRules = document.getElementById('game-rules-btn');
+    
+    if (discordRules.classList.contains('selected') || gameRules.classList.contains('selected')){
+        const showBtn = document.getElementById('show-rules-dropdown-btn');
+        showBtn.classList.add('selected');
+    }
 
 }

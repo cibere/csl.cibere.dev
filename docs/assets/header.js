@@ -2,7 +2,7 @@ function addHeader(href){
     var innerHTML = `
     <div class="header-container">
         <div class="logo">
-            <a href="/"><img src="assets/logo.png" width="32" height="32"></a>
+            <a href="/"><img src="/assets/logo.png" width="32" height="32"></a>
             <span><strong>C</strong>ompetative <strong>S</strong>occer <strong>L</strong>eague</span>
         </div>
         <div class="buttons">

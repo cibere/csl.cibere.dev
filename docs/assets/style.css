@@ -118,3 +118,9 @@ header > .header-container > .buttons button.selected {
 details > summary {
     cursor: pointer;
 }
+.italic {
+    font-style: italic;
+}
+.footer {
+    font-size: 10px;
+}

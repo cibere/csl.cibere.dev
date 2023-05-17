@@ -11,7 +11,7 @@ function addHeader(href){
                 <div class="dropdown-content">
                     <a href="/rules/discord"><button class="button${href === "discord_rules" ? " selected" : ""}" id="discord-rules-btn">Discord Rules</button></a>
                     <a href="/rules/game"><button class="button${href === "game_rules" ? " selected" : ""}" id="game-rules-btn">Game Rules</button></a>
-                    <a href="/rules/team"><button class="button${href === "team_rules" ? " selected" : ""}" id="team-rules-btn">Team Rules</button></a>
+                    <a href="/rules/match"><button class="button${href === "match_rules" ? " selected" : ""}" id="match-rules-btn">Team Rules</button></a>
                 </div>
             </div>
             <a target="__blank" href="https://discord.gg/YfNtky8Wnv"><button class="button">Discord</button></a>
@@ -29,8 +29,9 @@ function addHeader(href){
 
     const discordRules = document.getElementById("discord-rules-btn");
     const gameRules = document.getElementById('game-rules-btn');
+    const matchRules = document.getElementById('match-rules-btn')
     
-    if (discordRules.classList.contains('selected') || gameRules.classList.contains('selected')){
+    if (discordRules.classList.contains('selected') || gameRules.classList.contains('selected') || matchRules.classList.contains('selected')){
         const showBtn = document.getElementById('show-rules-dropdown-btn');
         showBtn.classList.add('selected');
     }

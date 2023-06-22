@@ -14,6 +14,7 @@ function addHeader(href){
                     <a href="/rules/match"><button class="button${href === "match_rules" ? " selected" : ""}" id="match-rules-btn">Match Rules</button></a>
                 </div>
             </div>
+            <a target="__blank" href="/guides"><button class="button${href === "guide" ? " selected" : ""}">Guides</button></a>
             <a target="__blank" href="https://discord.gg/YfNtky8Wnv"><button class="button">Discord</button></a>
             <a target="__blank" href="https://www.roblox.com/groups/8328186/Blinx-Uprise#!/about"><button
                     class="button">Roblox Group</button></a>
